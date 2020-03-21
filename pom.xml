@@ -28,6 +28,15 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+				<username>malli2222</username>
+				<password>Malli222</password>
+				<environment>SANDBOX</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>workdtimezone-service</applicationName>
+				<muleVersion>4.2.2</muleVersion>
+				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
