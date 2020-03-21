@@ -8,6 +8,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
     <http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="61334e74-653a-4da6-b742-de9a28c9e384" basePath="/api/timezone">
 		<http:request-connection host="worldtimeapi.org" />
 	</http:request-config>
+	
 	<api-gateway:autodiscovery apiId="16068072" doc:name="API Autodiscovery" doc:id="a2af6c83-538e-497e-beee-854170cd44eb" flowRef="jenkins-world-timezone-demo-main" />
 	<flow name="jenkins-world-timezone-demo-main">
         <http:listener config-ref="jenkins-world-timezone-demo-httpListenerConfig" path="/api/*">
@@ -135,5 +136,7 @@ output application/json
 	city : "kolkata"
 }]]]></http:uri-params>
 		</http:request>
+		<flow-ref doc:name="Flow Reference" doc:id="4ba76532-b53e-48f7-8ff5-050de0ef5f26" name="flow2Flow"/>
+		<flow-ref doc:name="Flow Reference" doc:id="a3e5746f-d3c7-4f87-9901-36288a2eb141" name="flow2Sub_Flow"/>
     </flow>
 </mule>
