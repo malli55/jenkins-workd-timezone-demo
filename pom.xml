@@ -31,7 +31,7 @@
 				<cloudHubDeployment>
 				<username>malli2222</username>
 				<password>Malli222</password>
-				<environment>SANDBOX</environment>
+				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
 				<applicationName>workdtimezone-service</applicationName>
