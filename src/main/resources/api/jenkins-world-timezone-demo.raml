@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: Jenkins-world-timezone-demo
+description: time zone demo
+/timezone:
+  get:
+    queryParameters:
+      region:
+        description: region name
+        type: string
+        required: false
+      city:
+        description: city name
+        type: string
+        required: false
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                response : time zone response
+              }
+              
